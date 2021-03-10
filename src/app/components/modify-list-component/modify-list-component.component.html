@@ -1,0 +1,23 @@
+<h3 style="text-align: center;">Editar tarea</h3>
+
+<div>
+    <form [formGroup]="form" autocomplete="off" fxLayout="column" fxLayoutAlign="center center">
+        <mat-form-field appearance="fill" style="width: 235px;">
+            <mat-label>Titulo</mat-label>
+            <input matInput formControlName="Titulo">
+        </mat-form-field>
+        <h1></h1>
+        <mat-form-field appearance="fill" style="width: 235px;">
+            <mat-label>Descripcion</mat-label>
+            <input matInput formControlName="Descripcion">
+        </mat-form-field>
+        <h1></h1>
+        <div>
+            <mat-checkbox formControlName="Terminado" style="padding-left: 0px; margin: auto;" class="example-margin">Terminado</mat-checkbox>
+
+            <button style="padding-left: 120px; width: 0px; height: 0px;" mat-icon-button (click)="guardar()">
+                <mat-icon>save</mat-icon>
+            </button>
+        </div>
+    </form>
+</div>
